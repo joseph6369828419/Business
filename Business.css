@@ -1,0 +1,428 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+    position: relative;
+}
+
+header h1 {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    transition: max-height 0.5s ease-in-out; /* Smooth transition for the menu */
+    max-height: 0; /* Hidden by default */
+    overflow: hidden; /* Hide content outside max-height */
+}
+
+nav ul.show {
+    max-height: 500px; /* Enough space for menu to appear (adjust based on content) */
+}
+
+nav ul li {
+    display: block;
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-icon {
+    display: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    float: right;
+}
+
+/* Sections */
+section {
+    padding: 20px 0;
+}
+
+#home {
+    background: #f4f4f4;
+}
+
+#services {
+    background: #e2e2e2;
+}
+
+#career {
+    background: #d2d2d2;
+}
+
+#about {
+    background: #c2c2c2;
+}
+
+#contact {
+    background: #b2b2b2;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section p {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #77aaff;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+#home {
+    width: 100%;
+    height: 700px;
+    background-color: red;
+  }
+
+
+  #job {
+    width: 100%;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light gray background */
+    text-align: center; /* Center text */
+    box-sizing: border-box; /* Ensures padding is included in width */
+    margin-top: 20%;
+}
+
+#job h2 {
+    font-size: 2em;
+    color: #333; /* Dark text color */
+    margin-bottom: 15px;
+}
+
+#job p {
+    font-size: 1.2em;
+    color: #555; /* Lighter text color */
+    line-height: 1.5; /* Spacing between lines */
+    margin: 0; /* No margin */
+}
+/* Media Queries for Mobile Responsiveness */
+/* Media Queries for Mobile Responsiveness */
+
+#services {
+    text-align: center;
+    background-color: black;
+    color: white;
+  }
+  
+  .slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  img {
+    width: 50%;
+    height: auto;
+  }
+  
+  /* Navigation buttons */
+  .nav-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .nav-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .nav-buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+
+    
+
+
+
+  
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: 6vh;
+        color: red;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    .parent {
+        background-color: black;
+    }
+
+    /* Stack the header elements */
+    header h1, nav {
+        float: none;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-bottom: -9%;
+    }
+
+    header {
+        background-color: white;
+    }
+
+    nav ul {
+        padding: 0;
+        text-align: center;
+        display: none; /* Hide the navigation by default */
+        max-height: 0; /* Hidden by default with transition effect */
+    }
+
+    nav ul.show {
+        display: block;
+        max-height: 500px; /* Enough space for the menu to expand */
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block; /* Show the menu icon */
+        color: black;
+        margin-right: 10%;
+    }
+
+    section {
+        padding: 30px 20px;
+        box-sizing: border-box; /* Ensure padding is included in the width */
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+
+    #home {
+        max-width: 100%;  /* Set to full width on smaller screens */
+        height: 70vh; /* Adjust height automatically */
+        box-sizing: border-box; /* Prevent width issues when padding is applied */
+    }
+
+
+    #job {
+        width: 100%;
+        padding: 20px;
+        background-color: #f30a0a; /* Light gray background */
+        text-align: center; /* Center text */
+        box-sizing: border-box; /* Ensures padding is included in width */
+        
+    }
+
+    #job h2 {
+        font-size: 2em;
+        color: #ffffff; /* Dark text color */
+        margin-bottom: 15px;
+    }
+
+    #job p {
+        font-size: 1.3rem; /* Set font size to 1.3rem */
+        color: #ffffff; /* Lighter text color */
+        line-height: 1.5; /* Spacing between lines */
+        margin: 0; /* No margin */
+        width: 70%; /* Set width to 60% */
+        margin: 0 auto; /* Center align the paragraph */
+    }
+
+
+   
+    
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+        background-color: black;
+    }
+
+    section {
+        padding: 20px;
+        box-sizing: border-box; /* Ensure padding is included in the width */
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    form input, form textarea, form button {
+        padding: 8px;
+    }
+
+    #home {
+        max-width: 100%;  /* Set to full width on smaller screens */
+        height: 70vh; /* Adjust height automatically */
+        box-sizing: border-box; /* Prevent width issues when padding is applied */
+    }
+    #job {
+        width: 100%;
+        padding: 20px;
+        background-color:#f30a0a; /* Light gray background */
+        text-align: center; /* Center text */
+        box-sizing: border-box; /* Ensures padding is included in width */
+        margin-top: 20%;
+    }
+
+    #job h2 {
+        font-size: 2em;
+        color: #fff6f6; /* Dark text color */
+        margin-bottom: 15px;
+    }
+
+    #job p {
+        font-size: 1.3rem; /* Set font size to 1.3rem */
+        color: #ffffff; /* Lighter text color */
+        line-height: 1.5; /* Spacing between lines */
+        margin: 0; /* No margin */
+        width: 70%; /* Set width to 60% */
+        margin: 0 auto; /* Center align the paragraph */
+    }
+    #services {
+        text-align: center;
+        background-color: black;
+        color: white;
+      }
+      
+      .slider {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+      
+      .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+      
+      .slide {
+        min-width: 100%;
+        box-sizing: border-box;
+      }
+      
+      img {
+        width: 100%;
+        height: auto;
+      }
+      
+      /* Navigation buttons */
+      .nav-buttons {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+      }
+      
+      .nav-buttons button {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+      
+      .nav-buttons button:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      
+}
