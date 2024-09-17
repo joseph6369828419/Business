@@ -76,11 +76,47 @@
     
     
     
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Learn more about our journey and our mission.</p>
+      <section id="about">
+        <h2>Why Choose Us</h2>
+        <div class="about-slider">
+            <div class="slider-images">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <img src="images/duke.jfif" alt="Slide 1">
+                    <p class="title">Back Office Services</p>
+                    <p class="para">We deploy several solutions to convert hard-copy data, microfilm images, and other media to electronic format...</p>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="images/duke.jfif" alt="Slide 2">
+                    <p class="title">Back Office Services</p>
+                    <p class="para">We deploy several solutions to convert hard-copy data, microfilm images, and other media to electronic format...</p>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <img src="images/duke.jfif" alt="Slide 3">
+                    <p class="title">Back Office Services</p>
+                    <p class="para">We deploy several solutions to convert hard-copy data, microfilm images, and other media to electronic format...</p>
+                </div>
+            </div>
+            <button class="slider-btn next-btn">Next</button>
+        </div>
     </section>
+    
+<script>
+    const images = document.querySelectorAll('.slider-images img');
+const nextBtn = document.querySelector('.next-btn');
+let currentIndex = 0;
+
+function showNextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    const offset = -currentIndex * 100;
+    document.querySelector('.slider-images').style.transform = `translateX(${offset}%)`;
+}
+
+nextBtn.addEventListener('click', showNextImage);
+
+</script>    
 
     <section id="contact">
         <h2>Contact Us</h2>
@@ -91,6 +127,17 @@
             <button type="submit">Send Message</button>
         </form>
     </section>
+
+
+
+
+
+
+
+
+
+
+    
 <div>
     <footer>
         <p>&copy; 2024 Small Business. All Rights Reserved.</p>

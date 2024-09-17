@@ -164,7 +164,7 @@ footer {
 /* Media Queries for Mobile Responsiveness */
 /* Media Queries for Mobile Responsiveness */
 
-#s#services {
+#services {
     text-align: center;
   }
   
@@ -214,6 +214,56 @@ footer {
   
 
 
+
+  .about-slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Maximum width of the slider */
+    overflow: hidden;
+    margin: 0 auto; /* Center the slider */
+}
+
+.slider-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition effect */
+}
+
+.slide {
+    min-width: 100%; /* Each slide takes full width of the slider */
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+    align-items: center; /* Center align images and text */
+}
+
+.slide img {
+    width: 100%; /* Make the image take full width of the slide */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.para {
+    width: 50%; /* Paragraph text takes 50% of the slide width */
+    text-align: center; /* Center the text */
+    margin: 0 auto; /* Center the paragraph */
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent button background */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1; /* Ensures button stays on top of the images */
+}
 
   
 
@@ -315,6 +365,8 @@ footer {
 
     #services {
         text-align: center;
+        background-color: black;
+        color: white;
       }
       
       .slider {
@@ -362,6 +414,48 @@ footer {
       }
       
    
+
+
+#about{
+    background-color: black;
+    color: white;
+}
+
+      .about-slider {
+        position: relative;
+        width: 100%;
+        max-width: 600px; /* Adjust as needed */
+        overflow: hidden;
+        margin: 0 auto;
+      
+    }
+    
+    .slider-images {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .slider-images img {
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+    }
+    
+    .slider-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .next-btn {
+        right: 10px;
+    }
+    
     
 }
 
@@ -469,4 +563,53 @@ footer {
       }
       
       
+
+
+
+
+      
+      .about-slider {
+        position: relative;
+        width: 100%;
+        max-width: 600px; /* Adjust as needed */
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    
+    .slider-images {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .slider-images img {
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+    }
+    
+    .slider-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .next-btn {
+        right: 10px;
+    }
+    
+    .menu-icon {
+        display: block; /* Show the menu icon */
+        color: black;
+margin-top: -2%;
+
+    }
+
+
+
+    
 }
