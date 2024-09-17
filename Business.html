@@ -67,6 +67,7 @@
         </div>
       </section>
       
+      
 
 
 
@@ -104,19 +105,20 @@
 
 
 <script>
-   const customSlides = document.querySelector('.custom-slides');
-  const customSlideWidth = document.querySelector('.custom-slide').clientWidth;
-  let currentSlide = 0;
+   const slides = document.querySelector('.slides');
+const slideWidth = document.querySelector('.slide').clientWidth;
+let currentSlide = 0;
 
-  document.getElementById('nextBtn').addEventListener('click', () => {
-    currentSlide = (currentSlide + 1) % document.querySelectorAll('.custom-slide').length;
-    customSlides.style.transform = `translateX(-${currentSlide * customSlideWidth}px)`;
-  });
+document.getElementById('nextBtn').addEventListener('click', () => {
+  currentSlide = (currentSlide + 1) % document.querySelectorAll('.slide').length;
+  slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+});
 
-  document.getElementById('prevBtn').addEventListener('click', () => {
-    currentSlide = (currentSlide - 1 + document.querySelectorAll('.custom-slide').length) % document.querySelectorAll('.custom-slide').length;
-    customSlides.style.transform = `translateX(-${currentSlide * customSlideWidth}px)`;
-  });
+document.getElementById('prevBtn').addEventListener('click', () => {
+  currentSlide = (currentSlide - 1 + document.querySelectorAll('.slide').length) % document.querySelectorAll('.slide').length;
+  slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+});
+
 
 </script>
 </body>

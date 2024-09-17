@@ -164,10 +164,8 @@ footer {
 /* Media Queries for Mobile Responsiveness */
 /* Media Queries for Mobile Responsiveness */
 
-#services {
+#s#services {
     text-align: center;
-    background-color: black;
-    color: white;
   }
   
   .slider {
@@ -184,10 +182,11 @@ footer {
   .slide {
     min-width: 100%;
     box-sizing: border-box;
+    margin-left: 15%;
   }
   
   img {
-    width: 50%;
+    width: 60%;
     height: auto;
   }
   
@@ -213,8 +212,6 @@ footer {
     background-color: rgba(0, 0, 0, 0.8);
   }
   
-
-    
 
 
 
@@ -316,7 +313,54 @@ footer {
         margin: 0 auto; /* Center align the paragraph */
     }
 
-
+    #services {
+        text-align: center;
+      }
+      
+      .slider {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+      
+      .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+      
+      .slide {
+        min-width: 100%;
+        box-sizing: border-box;
+        margin-left: 0%;
+      }
+      
+      img {
+        width: 100%;
+        height: auto;
+      }
+      
+      /* Navigation buttons */
+      .nav-buttons {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+      }
+      
+      .nav-buttons button {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+      
+      .nav-buttons button:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      
    
     
 }
@@ -378,8 +422,6 @@ footer {
     }
     #services {
         text-align: center;
-        background-color: black;
-        color: white;
       }
       
       .slider {
@@ -396,6 +438,7 @@ footer {
       .slide {
         min-width: 100%;
         box-sizing: border-box;
+        margin-left: 0;
       }
       
       img {
@@ -424,5 +467,6 @@ footer {
       .nav-buttons button:hover {
         background-color: rgba(0, 0, 0, 0.8);
       }
+      
       
 }
